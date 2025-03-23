@@ -1,0 +1,101 @@
+{
+    "name": "Novinex",
+    "short_name": "Novinex",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#131E33",
+    "lang": "fa-IR",
+    "scope": "/",
+    "id": "/",
+    "description": "Novinex",
+    "theme_color": "#122640",
+    "dir": "ltr",
+    "orientation": "natural",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "categories": [
+        "development",
+        "developer tools"
+    ],
+    "icons": [
+        {
+            "src": "pwa/pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa/pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa/pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "pwa/maskable-icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "og-image.png",
+            "sizes": "1200x630",
+            "type": "image/png",
+            "label": "Screenshot of Novinex"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "واریز",
+            "description": "واریز ریال به کیف پول نوینکس",
+            "url": "/deposit",
+            "icons": [
+                {
+                    "src": "pwa/shortcuts/variz.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "خرید",
+            "description": "خرید از نوینکس",
+            "url": "/prod/buy",
+            "icons": [
+                {
+                    "src": "pwa/shortcuts/buy.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "حواله",
+            "description": "حواله نوینکس",
+            "url": "/send",
+            "icons": [
+                {
+                    "src": "pwa/shortcuts/send.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "handle_links": "preferred",
+    "launch_handler": {
+        "client_mode": [
+            "navigate-existing",
+            "auto"
+        ]
+    },
+    "edge_side_panel": {
+        "preferred_width": 480
+    }
+}

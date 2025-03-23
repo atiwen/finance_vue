@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # اگر فایل یا دایرکتوری وجود نداشت
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # درخواست را به index.html هدایت کن
+  RewriteRule ^ index.html [L]
+</IfModule>
